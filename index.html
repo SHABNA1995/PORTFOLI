@@ -26,6 +26,12 @@
     #about{
       height: 800px;
     }
+    #a1{
+
+    
+      margin-left: calc(.6* var(--bs-gutter-x));
+    
+    }
     #services{
       height: 900px;
     }
@@ -55,6 +61,12 @@
             height: 500px;
             width: 100%;
           }
+          #maindiv{
+            width: 100%;
+          }
+        }
+        #namediv:hover{
+          color: blue;
         }
   </style>
 </head>
@@ -87,30 +99,30 @@
         </div>
     </nav>
 
-      <section class="bg-info" id="home" style="padding-top: 7em;" style="height: 600px;">
+      <section class="bg-white" id="home" style="padding-top: 7em;" style="height: 600px;">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
               <img src="./images/dp.jpg" alt="Sorry...." id="pic" class="img-fluid rounded-circle">
 
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6" id="namediv">
               <H4 class="pt-2" P>Hi, I'am </H4>
               <h3>SHABNA</h3><BR>
-              <H4> FULL STACK DEVELOPER</H4>
+              <h3> FULL STACK DEVELOPER</h3>
               <P>"website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”</P>
             </div>
           </div>
         </div>
       </section>
-      <section class="p-2 bg-dark" id="about">
+      <section class=" p-1 bg-secondary" id="about" style=" margin-left: calc(.6* var(--bs-gutter-x));">
         <div class="container">
-          <h1 class="text-center text-white p-3 mt-5"><u>About Me</u></h1>
+          <h1 class="text-center text-black p-3 mt-5"><u>About Me</u></h1>
           </h1>
           <div class="row">
-            <DIV CLASS="col-md-4 mt-4">
+            <DIV CLASS="col-md-4 mt-4 mx-5">
 
-              <div class="card text-center" style="width: 18rem; height: 200px">
+              <div class="card text-center id=a1" style="width: 18rem; height: 200px">
                 <div class="card-body">
                   <i class="fa-solid fa-user fa-2xl"></i>
                   <p class="card-text p-3"><b>
@@ -119,7 +131,7 @@
                 </div>
               </div>
             </dIV>
-            <DIV CLASS="col-md-4 mt-4">
+            <DIV CLASS="col-md-4 mt-4 mx-5">
               <div class="card text-center" style="width: 18rem; height: 200px">
                 <div class="card-body">
                   <i class="fa-solid fa-school fa-2xl"></i>
@@ -127,7 +139,7 @@
                 </div>
               </div>
             </DIV>
-            <DIV CLASS="col-md-4 mt-4">
+            <DIV CLASS="col-md-4 mt-4 mx-5">
               <div class="card text-center" style="width: 18rem; height: 200px">
                 <div class="card-body">
                   <i class="fa-solid fa-graduation-cap fa-2xl"></i>
@@ -178,8 +190,8 @@
         </div>
       </section>
       <section id="contact">
-        <DIV CLASS="col-md-4 mt-5">
-      <div class="card  text-center" style="width: 19rem">
+        <DIV CLASS="col-md-4 mt-5 mx-5">
+      <div class="card  text-center bg-info" style="width: 19rem">
         <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
         <div class="card-body mt-5">
           <i class="fa-solid fa-address-book fa-2xl"></i>
